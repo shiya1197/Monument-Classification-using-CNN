@@ -1,0 +1,378 @@
+
+(base) C:\Users\Admin>pip install keras
+Collecting keras
+  Downloading https://files.pythonhosted.org/packages/68/12/4cabc5c01451eb3b413d19ea151f36e33026fc0efb932bf51bcaf54acbf5/Keras-2.2.0-py2.py3-none-any.whl (300kB)
+    100% |################################| 307kB 179kB/s
+Collecting keras-preprocessing==1.0.1 (from keras)
+  Downloading https://files.pythonhosted.org/packages/f8/33/275506afe1d96b221f66f95adba94d1b73f6b6087cfb6132a5655b6fe338/Keras_Preprocessing-1.0.1-py2.py3-none-any.whl
+Requirement already satisfied: h5py in c:\users\admin\anaconda2\lib\site-packages (from keras)
+Requirement already satisfied: pyyaml in c:\users\admin\anaconda2\lib\site-packages (from keras)
+Requirement already satisfied: six>=1.9.0 in c:\users\admin\anaconda2\lib\site-packages (from keras)
+Collecting keras-applications==1.0.2 (from keras)
+  Downloading https://files.pythonhosted.org/packages/e2/60/c557075e586e968d7a9c314aa38c236b37cb3ee6b37e8d57152b1a5e0b47/Keras_Applications-1.0.2-py2.py3-none-any.whl (43kB)
+    100% |################################| 51kB 158kB/s
+Requirement already satisfied: scipy>=0.14 in c:\users\admin\anaconda2\lib\site-packages (from keras)
+Requirement already satisfied: numpy>=1.9.1 in c:\users\admin\anaconda2\lib\site-packages (from keras)
+Installing collected packages: keras-preprocessing, keras-applications, keras
+Successfully installed keras-2.2.0 keras-applications-1.0.2 keras-preprocessing-1.0.1
+You are using pip version 9.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(base) C:\Users\Admin>conda create -n tensorflow pip python=3.5
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.4.10
+  latest version: 4.5.8
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\Admin\Anaconda2\envs\tensorflow
+
+  added / updated specs:
+    - pip
+    - python=3.5
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    python-3.5.5               |       h0c2934d_2        18.2 MB
+    wheel-0.31.1               |           py35_0          81 KB
+    certifi-2018.4.16          |           py35_0         143 KB
+    vs2015_runtime-15.5.2      |                3         2.2 MB
+    vc-14.1                    |       h0510ff6_3           5 KB
+    wincertstore-0.2           |   py35hfebbdb8_0          13 KB
+    pip-10.0.1                 |           py35_0         1.8 MB
+    setuptools-39.2.0          |           py35_0         593 KB
+    ------------------------------------------------------------
+                                           Total:        23.1 MB
+
+The following NEW packages will be INSTALLED:
+
+    certifi:        2018.4.16-py35_0
+    pip:            10.0.1-py35_0
+    python:         3.5.5-h0c2934d_2
+    setuptools:     39.2.0-py35_0
+    vc:             14.1-h0510ff6_3
+    vs2015_runtime: 15.5.2-3
+    wheel:          0.31.1-py35_0
+    wincertstore:   0.2-py35hfebbdb8_0
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+python 3.5.5: ################################################################################################# | 100%
+wheel 0.31.1: ################################################################################################# | 100%
+certifi 2018.4.16: ############################################################################################ | 100%
+vs2015_runtime 15.5.2: ######################################################################################## | 100%
+vc 14.1: ###################################################################################################### | 100%
+wincertstore 0.2: ############################################################################################# | 100%
+pip 10.0.1: ################################################################################################### | 100%
+setuptools 39.2.0: ############################################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate tensorflow
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\Admin>conda activate tensorflow
+
+(tensorflow) C:\Users\Admin>activate tenserflow
+Could not find conda environment: tenserflow
+You can list all discoverable environments with `conda info --envs`.
+
+
+(tensorflow) C:\Users\Admin>conda info --envs
+# conda environments:
+#
+base                     C:\Users\Admin\Anaconda2
+tensorflow            *  C:\Users\Admin\Anaconda2\envs\tensorflow
+
+
+(tensorflow) C:\Users\Admin>activate tensorflow
+
+(tensorflow) C:\Users\Admin>pip install tensorflow
+Collecting tensorflow
+  Downloading https://files.pythonhosted.org/packages/55/02/e07e6ff277147aa52816215cc1b96d1acd1166411fc71356c6c3160760ca/tensorflow-1.9.0-cp35-cp35m-win_amd64.whl (37.1MB)
+    100% |################################| 37.1MB 120kB/s
+Requirement already satisfied: wheel>=0.26 in c:\users\admin\anaconda2\envs\tensorflow\lib\site-packages (from tensorflow) (0.31.1)
+Collecting gast>=0.2.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/5c/78/ff794fcae2ce8aa6323e789d1f8b3b7765f601e7702726f430e814822b96/gast-0.2.0.tar.gz
+Collecting six>=1.10.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting grpcio>=1.8.6 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/f4/6a/ad4a8ee21edd417274cb2327045ac59fc5d05b8764d4663c356c24a128e0/grpcio-1.13.0-cp35-cp35m-win_amd64.whl (1.4MB)
+    100% |################################| 1.4MB 165kB/s
+Collecting setuptools<=39.1.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/8c/10/79282747f9169f21c053c562a0baa21815a8c7879be97abd930dbcf862e8/setuptools-39.1.0-py2.py3-none-any.whl (566kB)
+    100% |################################| 573kB 200kB/s
+Collecting numpy>=1.13.3 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/62/47/54baeff52b37be258dd97442f52d8a2a9c27c4af8fcbc5467827c5ae5eed/numpy-1.15.0-cp35-none-win_amd64.whl (13.5MB)
+    100% |################################| 13.5MB 162kB/s
+Collecting tensorboard<1.10.0,>=1.9.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/9e/1f/3da43860db614e294a034e42d4be5c8f7f0d2c75dc1c428c541116d8cdab/tensorboard-1.9.0-py3-none-any.whl (3.3MB)
+    100% |################################| 3.3MB 124kB/s
+Collecting astor>=0.6.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting termcolor>=1.1.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting absl-py>=0.1.6 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/57/8d/6664518f9b6ced0aa41cf50b989740909261d4c212557400c48e5cda0804/absl-py-0.2.2.tar.gz (82kB)
+    100% |################################| 92kB 68kB/s
+Collecting protobuf>=3.4.0 (from tensorflow)
+  Downloading https://files.pythonhosted.org/packages/f0/7d/1145805ef3ac475074f8d14d1c0512a79ef709ddfd35ca89c5fa4fc94065/protobuf-3.6.0-cp35-cp35m-win_amd64.whl (1.1MB)
+    100% |################################| 1.1MB 100kB/s
+Collecting werkzeug>=0.11.10 (from tensorboard<1.10.0,>=1.9.0->tensorflow)
+  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+    100% |################################| 327kB 1.1MB/s
+Collecting markdown>=2.6.8 (from tensorboard<1.10.0,>=1.9.0->tensorflow)
+  Downloading https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl (78kB)
+    100% |################################| 81kB 114kB/s
+Building wheels for collected packages: gast, termcolor, absl-py
+  Running setup.py bdist_wheel for gast ... done
+  Stored in directory: C:\Users\Admin\AppData\Local\pip\Cache\wheels\9a\1f\0e\3cde98113222b853e98fc0a8e9924480a3e25f1b4008cedb4f
+  Running setup.py bdist_wheel for termcolor ... done
+  Stored in directory: C:\Users\Admin\AppData\Local\pip\Cache\wheels\7c\06\54\bc84598ba1daf8f970247f550b175aaaee85f68b4b0c5ab2c6
+  Running setup.py bdist_wheel for absl-py ... done
+  Stored in directory: C:\Users\Admin\AppData\Local\pip\Cache\wheels\a0\f8\e9\1933dbb3447ea6ef57062fd5461cb118deb8c2ed074e8344bf
+Successfully built gast termcolor absl-py
+Installing collected packages: gast, six, grpcio, setuptools, numpy, werkzeug, markdown, protobuf, tensorboard, astor, termcolor, absl-py, tensorflow
+  Found existing installation: setuptools 39.2.0
+    Uninstalling setuptools-39.2.0:
+      Successfully uninstalled setuptools-39.2.0
+Successfully installed absl-py-0.2.2 astor-0.7.1 gast-0.2.0 grpcio-1.13.0 markdown-2.6.11 numpy-1.15.0 protobuf-3.6.0 setuptools-39.1.0 six-1.11.0 tensorboard-1.9.0 tensorflow-1.9.0 termcolor-1.1.0 werkzeug-0.14.1
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\Admin>pip install imutils
+Collecting imutils
+  Downloading https://files.pythonhosted.org/packages/15/ba/24272ac57159cf255959f9298b8e42f00528be90ce4ccd274b604ae5e32d/imutils-0.4.6.tar.gz
+Building wheels for collected packages: imutils
+  Running setup.py bdist_wheel for imutils ... done
+  Stored in directory: C:\Users\Admin\AppData\Local\pip\Cache\wheels\cb\58\9b\7debccbc53159611f67cc7e2e3ed37b217e56e9b40e7ba80c3
+Successfully built imutils
+Installing collected packages: imutils
+Successfully installed imutils-0.4.6
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\Admin>pip install opencv-python
+Collecting opencv-python
+  Downloading https://files.pythonhosted.org/packages/34/60/a8feee857c5e610f16e4a2584e0554156c55470697efc23c0162b712a5d4/opencv_python-3.4.2.17-cp35-cp35m-win_amd64.whl (33.8MB)
+    100% |################################| 33.8MB 116kB/s
+Requirement already satisfied: numpy>=1.11.1 in c:\users\admin\anaconda2\envs\tensorflow\lib\site-packages (from opencv-python) (1.15.0)
+Installing collected packages: opencv-python
+Successfully installed opencv-python-3.4.2.17
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\Admin>cd..
+
+(tensorflow) C:\Users>cd..
+
+(tensorflow) C:\>cd D:\
+
+(tensorflow) C:\>chdir D:\
+
+(tensorflow) C:\>cd..
+
+(tensorflow) C:\>cd Desktop
+The system cannot find the path specified.
+
+(tensorflow) C:\>cd Users
+
+(tensorflow) C:\Users>cd Admin
+
+(tensorflow) C:\Users\Admin>cd Desktop
+
+(tensorflow) C:\Users\Admin\Desktop>cd monuments
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+Traceback (most recent call last):
+  File "testing.py", line 7, in <module>
+    from keras.models import Sequential
+ImportError: No module named 'keras'
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+Traceback (most recent call last):
+  File "testing.py", line 7, in <module>
+    from keras.models import Sequential
+ImportError: No module named 'keras'
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+Traceback (most recent call last):
+  File "testing.py", line 7, in <module>
+    from keras.models import Sequential
+ImportError: No module named 'keras'
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+Traceback (most recent call last):
+  File "testing.py", line 7, in <module>
+    from keras.models import Sequential
+ImportError: No module named 'keras'
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python
+Python 3.5.5 |Anaconda, Inc.| (default, Apr  7 2018, 04:52:34) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> import imutils
+>>> import pickle
+>>> import keras
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'keras'
+>>> quit()
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>pip install keras
+Collecting keras
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/68/12/4cabc5c01451eb3b413d19ea151f36e33026fc0efb932bf51bcaf54acbf5/Keras-2.2.0-py2.py3-none-any.whl
+Collecting keras-applications==1.0.2 (from keras)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/e2/60/c557075e586e968d7a9c314aa38c236b37cb3ee6b37e8d57152b1a5e0b47/Keras_Applications-1.0.2-py2.py3-none-any.whl
+Collecting keras-preprocessing==1.0.1 (from keras)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/f8/33/275506afe1d96b221f66f95adba94d1b73f6b6087cfb6132a5655b6fe338/Keras_Preprocessing-1.0.1-py2.py3-none-any.whl
+Collecting scipy>=0.14 (from keras)
+  Downloading https://files.pythonhosted.org/packages/84/fc/f0adfaea340732ff25ccba17d1dd6fcc81fda302dbf31212ef7395463720/scipy-1.1.0-cp35-none-win_amd64.whl (31.1MB)
+    100% |################################| 31.1MB 162kB/s
+Collecting h5py (from keras)
+  Downloading https://files.pythonhosted.org/packages/d0/2c/4572e2e495341e667c89b490ad18ea71a5f9e9fafca06109a9c7db22848b/h5py-2.8.0-cp35-cp35m-win_amd64.whl (2.3MB)
+    100% |################################| 2.3MB 275kB/s
+Requirement already satisfied: numpy>=1.9.1 in c:\users\admin\anaconda2\envs\tensorflow\lib\site-packages (from keras) (1.15.0)
+Collecting pyyaml (from keras)
+  Downloading https://files.pythonhosted.org/packages/ad/d4/d895fb7ac1b0828151b829a32cefc8a8b58b4499570520b91af20982b880/PyYAML-3.13-cp35-cp35m-win_amd64.whl (205kB)
+    100% |################################| 215kB 275kB/s
+Requirement already satisfied: six>=1.9.0 in c:\users\admin\anaconda2\envs\tensorflow\lib\site-packages (from keras) (1.11.0)
+Installing collected packages: h5py, keras-applications, scipy, keras-preprocessing, pyyaml, keras
+Successfully installed h5py-2.8.0 keras-2.2.0 keras-applications-1.0.2 keras-preprocessing-1.0.1 pyyaml-3.13 scipy-1.1.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "testing.py", line 19, in <module>
+    from sklearn.preprocessing import LabelBinarizer
+ImportError: No module named 'sklearn'
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>import scikit
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>_import scikit-learn
+'_import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>import scikit-learn
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>
+(tensorflow) C:\Users\Admin\Desktop\monuments>python
+Python 3.5.5 |Anaconda, Inc.| (default, Apr  7 2018, 04:52:34) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import scikit-learn
+  File "<stdin>", line 1
+    import scikit-learn
+                 ^
+SyntaxError: invalid syntax
+>>> import sklearn
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'sklearn'
+>>>
+>>> import sklearn
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'sklearn'
+>>> quit()
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>pip install scikit-learn
+Collecting scikit-learn
+  Downloading https://files.pythonhosted.org/packages/32/b9/46431bd1dff91527daecb3e4e8d28993ef3ab357120115a1a3d17b319f37/scikit_learn-0.19.2-cp35-cp35m-win_amd64.whl (4.3MB)
+    100% |################################| 4.4MB 285kB/s
+Installing collected packages: scikit-learn
+Successfully installed scikit-learn-0.19.2
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python
+Python 3.5.5 |Anaconda, Inc.| (default, Apr  7 2018, 04:52:34) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sklearn
+>>> quit()
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: testing.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+testing.py: error: the following arguments are required: -l/--labelbin
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python train_model.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: train_model.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+train_model.py: error: the following arguments are required: -l/--labelbin
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: testing.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+testing.py: error: the following arguments are required: -l/--labelbin
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model -l labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: testing.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+testing.py: error: unrecognized arguments: lb.pickle
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python testing.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: testing.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+testing.py: error: the following arguments are required: -l/--labelbin
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python train_model.py --dataset dataset --model md.model labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+usage: train_model.py [-h] -d DATASET -m MODEL -l LABELBIN [-p PLOT]
+train_model.py: error: the following arguments are required: -l/--labelbin
+
+(tensorflow) C:\Users\Admin\Desktop\monuments>python train_model.py --dataset dataset --model md.model --labelbin lb.pickle
+C:\Users\Admin\Anaconda2\envs\tensorflow\lib\importlib\_bootstrap.py:222: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  return f(*args, **kwds)
+Using TensorFlow backend.
+[+] loading dataset images...
+[+] compiling model...
+2018-07-25 14:00:48.845622: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+[+] training network...
+Epoch 1/50
+17/17 [==============================] - 108s 6s/step - loss: 1.5800 - acc: 0.5666 - val_loss: 4.4082 - val_acc: 0.4685
+Epoch 2/50
+ 2/17 [==>...........................] - ETA: 1:02 - loss: 1.1185 - acc: 0.6875
